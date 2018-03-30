@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Google Signin Example</title>
+		<meta name="google-signin-client_id" content="46521935412-0pl18k3a2mq7fs8nrl1853qcie9h5fjb.apps.googleusercontent.com">
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	</head>
+	<body>
+		<center>
+			<div class="w3-container w3-teal">
+			  <h1>Google Login Example</h1>
+			  <p>An example showing how to implement google login</p>
+			</div>
+			<div class="w3-container" id="signin-container">
+				<br>
+				<div class="w3-row w3-center">
+					<div class="w3-col l12 m12 s12" style="left:50%">
+						<div class="w3-card-4">
+							<header class="w3-container w3-blue">
+								<h1>Sign in</h1>
+							</header>
+							<div class="w3-container">
+								<br>
+								<center>
+									<div class="g-signin2" data-onsuccess="onSignIn"></div>
+								</center>
+								<br>
+							</div>
+							<footer class="w3-container w3-blue">
+							  <h5>Read more at <a href="http://www.kdpisda.tech/">www.kdpisda.tech</a></h5>
+							</footer>
+
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-container w3-center" id="signout-container" >
+				<br>
+				<div class="w3-row w3-center">
+					<div class="w3-col l12 m12 s12" style="left:50%">
+						<div class="w3-card-4">
+							<header class="w3-container w3-blue">
+								<p id="loggedUsername">UserName</p>
+							</header>
+							<div class="w3-container">
+								<br>
+								<img src="img_fjords.jpg" alt="Norway" id="loggedUserImage">
+								<p id="loggedUserEmail">EMail</p>
+							</div>
+							<footer class="w3-container w3-blue">
+								<a href="#" onclick="signOut();">Sign out</a>
+							</footer>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>
